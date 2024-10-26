@@ -7,14 +7,12 @@ save last open path, and jump to last open path at next time.
 > The latest main branch of Yazi is required at the moment.
 
 
-https://github.com/DreamMaoMao/bookmarks.yazi/assets/30348075/cb47efd0-7567-456c-8224-c7ae41130b34
-
 
 ## Installation
 
 ```sh
 # Linux/macOS
-git clone https://gitee.com/DreamMaoMao/lastopen.yazi.git ~/.config/yazi/plugins/bookmarks.yazi
+git clone https://gitee.com/DreamMaoMao/lastopen.yazi.git ~/.config/yazi/plugins/lastopen.yazi
 
 # Windows
 git clone https://gitee.com/DreamMaoMao/lastopen.yazi.git $env:APPDATA\yazi\config\plugins\lastopen.yazi
