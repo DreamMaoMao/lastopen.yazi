@@ -34,3 +34,12 @@ run = "plugin lastopen --args='jump'"
 desc = "Jump to lastopen path"
 
 ```
+
+## config(init.lua)
+```lua
+require("lastopen"):setup({
+  cache_path = '/home/xxx/lastopencache',
+})
+```
+```
+```
