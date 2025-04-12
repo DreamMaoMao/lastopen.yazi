@@ -3,9 +3,10 @@
 
 local save_and_open = ya.sync(function(state)
 	local h = cx.active.current.hovered
-	ya.manager_emit("open",{h.url})
+	local url = tostring(h.url)
+	ya.mgr_emit("open",{url})
     local file = io.open(state.cache_path, "w+")
-	file:write(string.format("%s",h.url))
+	file:write(string.format("%s",url))
     file:close()
 end)
 
@@ -47,7 +48,7 @@ return {
 			local lastpath = read_lastpath()
 
 			if lastpath then
-				ya.manager_emit("reveal",{lastpath})
+				ya.mgr_emit("reveal",{lastpath})
 			else
 				ya.notify {
 					title = "lastopen",
