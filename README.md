@@ -25,12 +25,12 @@ Add this to your `keymap.toml`:
 ```toml
 [[manager.prepend_keymap]]
 on = [ "<Enter>" ]
-run = "plugin lastopen --args='open'"
+run = "plugin lastopen -- open"
 desc = "open file and save path"
 
 [[manager.prepend_keymap]]
 on = [ "u", "l" ]
-run = "plugin lastopen --args='jump'"
+run = "plugin lastopen -- jump"
 desc = "Jump to lastopen path"
 
 ```
